@@ -1,7 +1,12 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
-        System.out.println("你好，世界！");
-        System.out.println("Git is awesome! 🚀");
+        greet("World");
+        greet("世界");
+        greet("Git");
+        greet("Claude");
+    }
+
+    public static void greet(String name) {
+        System.out.println("Hello, " + name + "!");
     }
 }
