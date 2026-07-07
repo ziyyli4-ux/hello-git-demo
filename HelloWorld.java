@@ -1,12 +1,12 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        greet("World");
-        greet("世界");
-        greet("Git");
-        greet("Claude");
+        System.out.println(greet("World"));
+        System.out.println(greet("世界"));
+        System.out.println(greet("Git"));
+        System.out.println(greet("Claude"));
     }
 
-    public static void greet(String name) {
-        System.out.println("Hello, " + name + "!");
+    public static String greet(String name) {
+        return "Hello, " + name + "!";
     }
 }
